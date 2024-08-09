@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--The title element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+        <title>Page Title</title>
+        <meta http-equiv="refresh" content="60">
+    </head>
+    <body>
+        <!--Text-->
+        <h1>The 'h1' tag defines a large heading.</h1>
+        <h2>HTML headings are defined with the 'h1' to 'h6' tags.</h2>
+        <p>The 'p' tag defines a paragraph. 
+        <br>The 'br' tag defines a line break, and is an empty element without a closing tag.</p>
+        <p>normal <b>in đậm </b><i>in nghiêng </i><big>lớn </big>
+        <small>nhỏ </small>sub<sub>sub </sub><ins>chèn </ins>
+        <del>gạch ngang </del><mark>highlight</mark></p>
+        <hr>
+
+        <!--Link-->
+        <!--The <a> tag defines a hyperlink. 
+        The href attribute specifies the URL of the page the link goes to-->
+        <!--do not create new tab-->
+        <a href="https://www.w3schools.com" target="_self">HTML links are defined with the 'a' tag. <br>The link's destination is specified in the href attribute. </a>
+        <br>
+        <!--will create new tab-->
+        <a href="https://www.w3schools.com" target="_blank">HTML links are defined with the 'a' tag. <br>The link's destination is specified in the href attribute. </a>
+        <br>
+
+        <a href="/Page/page1.html">Move to page 1</a>
+        <br>
+        <a href="page2.html">Move to page 2</a>
+        <hr>
+
+        <!--Image-->
+        <!--HTML images are defined with the 'img' tag. 
+        The source file (src), alternative text (alt), width, and height are provided as attributes.-->
+        <a href="https://www.w3schools.com" target="_blank">
+            <img src="/images/html.jpg" alt="html logo" title="HTML logo" width="200">
+        </a>
+        <hr>
+
+        <!--Audio-->
+        <audio controls muted src="audios/audio.mp3"></audio>
+        <hr>
+
+        <!--Video-->
+        <video controls muted src="videos/Video.mp4" width="300"></video>
+        <hr>
+
+        <!--List-->
+        <h2>Un-order list</h2>
+        <ul>
+            <li>Fruit</li>
+            <li>Veges</li>
+            <li>Meat</li>
+        </ul>
+
+        <h2>Order list</h2>
+        <ol type="a">
+            <li>Fruit
+                <ol type="1">
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Banana</li>
+                </ol>
+            </li>
+            <li>Veges
+                <ol type="1">
+                    <li>Carrot</li>
+                    <li>Corn</li>
+                    <li>Potato</li>
+                </ol>
+            </li>
+            <li>Meat
+                <ol type="1">
+                    <li>Pork</li>
+                    <li>Beef</li>
+                    <li>Chicken</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2>Description list</h2>
+        <dl>
+            <dt>Fruit</dt>
+            <dd>Apple, Orange, Banana</dd>
+            <dt>Veges</dt>
+            <dd>Carrot, Corn, Potato</dd>
+            <dt>Meat</dt>
+            <dd>Pork, Beef, Chicken</dd>
+        </dl>
+        <hr>
+
+        <!--Table-->
+        <table border="black" bgcolor="lightgray" width="300">
+            <tr bgcolor="grey">
+                <th>STT</th>
+                <th>Name</th>
+                <th>Major</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Vietnd</td>
+                <td>IT-SE</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!--Div and Span-->
+        <p><div style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing</div> elit. Officiis magnam veniam fuga laborum dolorum repellat et asperiores, voluptate reprehenderit quasi, totam aliquid alias provident nihil eos, suscipit ipsa doloremque nobis?</p>
+        <p><span style="color: red;">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Perferendis veritatis, voluptatem facilis id velit saepe pariatur inventore voluptate alias ea quae neque assumenda, voluptates delectus? Cumque voluptate amet sunt quasi.</p>
+        <hr>
+
+        <!--Iframe-->
+        <iframe src="https://www.google.com" frameborder="0"></iframe>
+        <iframe src="page2.html" frameborder="0"></iframe>
+        <hr>
+
+        <!--Button-->
+        <button onclick="changeText()"
+            style="border-radius: 5px; background-color: red;">
+            <h3>DO NOT CLICK MEEE</h3>
+        </button>
+        <h1 id="h1"></h1>
+        <script>
+            changeText = () => {
+                document.getElementById("h1").innerHTML = "Told you not to click me.";
+            }
+        </script>
+        <hr>
+
+        <!--Form-->
+        <form method="post" action="">
+            <h1>Sign-up</h1>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="date">DOB: </label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="phone">Phone number: </label>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div>
+                Gender: 
+                <label for="gender-male">
+                    <input type="radio" name="gender" id="gender-male">
+                    Male
+                </label>
+                <label for="gender-female">
+                    <input type="radio" name="gender" id="gender-female">
+                    Female
+                </label>
+                <label for="gender-other">
+                    <input type="radio" name="gender" id="gender-other">
+                    Other
+                </label>
+                <br>
+            </div>
+            <div>
+                Major:
+                <select name="major" id="">
+                    <option value="SE">SE</option>
+                    <option value="GD">GD</option>
+                    <option value="AI">AI</option>
+                    <option value="IS">IS</option>
+                </select>
+            </div>
+
+            <input type="submit" name="" id="">
+            <input type="reset" name="" id="">
+        </form>
+
+    </body>
+</html>
