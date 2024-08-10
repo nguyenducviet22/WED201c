@@ -1,0 +1,125 @@
+/*Style*/
+/*class*/
+.external{
+    background-color: yellow;
+    color: black;
+}
+
+/*id*/
+#externalId{
+    background-color: red;
+}
+
+/*Font*/
+.font{
+    color: red;
+    font-family: sans-serif, 'Lucida Sans';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*Border*/
+.border{
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    border-radius: 5px;
+    border-top-color: blue;
+    border-bottom-width: 20px;
+    border-left-style: dotted;
+    padding: 10px;
+}
+
+/*Margin and Padding*/
+#p1{
+    width: 500px;
+    height: 100px;
+    border-style: solid;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+}
+#p2{
+    width: 500px;
+    height: 100px;
+    border-style: solid;
+    background-color: blue;
+    margin-left: 10px;
+}
+
+/*Position*/
+#box1{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-color: red;
+    
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-color: blue;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+#box3{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-color: green;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+/*Shadow*/
+#sp1{
+    text-shadow: 5px 0px 5px gray;
+}
+#sp2{
+    text-shadow: 0px 5px 5px gray;
+}
+#sp3{
+    text-shadow: 5px 5px 5px gray;
+}
+
+/*Transform*/
+#tbox1{
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*
+    transform: translateX(40px);
+    transform: translateY(40px);
+    transform: translate(40px, 40px);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: scale(2);
+    */
+}
+
+/*Pseudo class*/
+button:hover{
+    color: yellow;
+    background-color: red;
+}
+button:active{
+    color: black;
+    background-color: green;
+}
+li:nth-child(even){
+    color: yellow;
+    background-color: red;
+}
+
+/*Responsive*/
+@media all and (max-width: 700px) {
+    p{
+        color: red;
+    }
+}
