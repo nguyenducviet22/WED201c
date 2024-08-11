@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-md bg-primary">
+        <a href="" class="navbar-brand text-white">Logo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse"
+        data-bs-target="#dropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dropdown">
+            <div class="navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+
     <!-- Container-Row-Column -->
     <div class="container-fluid">
         <div class="row">
@@ -107,6 +135,68 @@
             </div>
         </form>
      </div>
+     <hr>
+
+    <!-- Button -->
+     <button class="btn btn-primary">Click me</button>
+     <button class="btn btn-outline-primary">Click me</button>
+     <hr>
+
+    <!-- Alert -->
+    <div class="alert alert-success alert-dismissible" role="alert">
+        Success
+        <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+    </div>
+    <hr>
+
+    <!-- Card -->
+    <div class="card-group">
+        <div class="card" style="width: 300px">
+            <img src="/imgs/earth.png" alt="The earth" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title">
+                    <h5>The Earth</h5>
+                </div>
+                <div class="card-subtitle">
+                    <h6>Our planet</h6>
+                </div>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos placeat aspernatur doloribus saepe esse obcaecati aut ea eligendi. Voluptate neque delectus corrupti quaerat blanditiis, voluptatibus quae deleniti a asperiores.
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 300px">
+            <img src="/imgs/earth.png" alt="The earth" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title">
+                    <h5>The Earth</h5>
+                </div>
+                <div class="card-subtitle">
+                    <h6>Our planet</h6>
+                </div>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos placeat aspernatur doloribus saepe esse obcaecati aut ea eligendi. Voluptate neque delectus corrupti quaerat blanditiis, voluptatibus quae deleniti a asperiores.
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Modal -->
+    <button class="btn btn-primary" data-bs-toggle="modal"
+    data-bs-target="#modal">Open</button>
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">My modal</div>
+                <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, totam dolores! Facilis perspiciatis molestias aspernatur quod quidem cum maxime. Quia expedita ea modi voluptate ut iste quaerat maiores rem magnam!</div>
+                <div class="modal-footer">The footer</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    
 
 </body>
 </html>
