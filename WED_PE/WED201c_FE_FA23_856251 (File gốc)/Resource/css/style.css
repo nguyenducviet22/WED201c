@@ -1,0 +1,50 @@
+/* To remove the under-scroll bar */
+body{
+    overflow-x: hidden;
+}
+/* To remove the two-side space */
+.header-container{
+    padding: 0;
+}
+
+/* To let the title, logo and search box be low */
+.header{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* To let the title be center */
+.header-title{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-style: italic;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.header-logo img{
+    width: 150px;
+    height: 110px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: #0EC0C3;
+    height: 50px;
+}
+
+.menu li.active{
+    background-color: red;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: #0EC0C3;
+}
