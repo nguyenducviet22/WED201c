@@ -7,7 +7,7 @@ body{
     padding: 0;
 }
 
-/* To let the title, logo and search box be low */
+/* To let the title, logo and search box be in a row and low */
 .header{
     display: flex;
     align-items: flex-end;
