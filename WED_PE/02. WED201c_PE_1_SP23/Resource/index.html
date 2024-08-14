@@ -58,8 +58,8 @@
         <div class="col-md-5 product-image">
           <img src="images/kemsaurieng.jpg" alt="Durian ice-cream" />
         </div>
-		<!--detail content-->
-        <div class="col-md-7 product-content">          
+        <!--detail content-->
+        <div class="col-md-7 product-content">
           <h2>Durian ice-cream</h2>
           <p>Durian ice cream is a favorite dessert made from durian</p>
           <p>
@@ -83,9 +83,88 @@
       <!--kết thúc image product-->
 
       <div style="clear: both"></div>
+      <div class="order row">
+        <form action="" class="menu-list col-md-6">
+          <div class="menu-list-header">
+            <div class="menu-list-header-first">IceCream & Milk Tea</div>
+            <div class="menu-list-header-second">Menu List</div>
+          </div>
+          <div class="menu-list-content">
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="2" id="coconut" />
+                <label for="coconut">Coconut cream</label>
+              </div>
+              <div class="menu-list-product-price">2$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="2.5" id="strawberry" />
+                <label for="strawberry">Strawberry ice-cream</label>
+              </div>
+              <div class="menu-list-product-price">2,5$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="3" id="durian" />
+                <label for="durian">Durian ice-cream</label>
+              </div>
+              <div class="menu-list-product-price">3$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="2" id="butter" />
+                <label for="butter">Butter cream</label>
+              </div>
+              <div class="menu-list-product-price">2$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="3" id="jackfruit" />
+                <label for="jackfruit">Jackfruit ice cream</label>
+              </div>
+              <div class="menu-list-product-price">3$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="3" id="lychee" />
+                <label for="lychee">Lychee Tea</label>
+              </div>
+              <div class="menu-list-product-price">3$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="2" id="kumquat" />
+                <label for="kumquat">Kumquat Tea</label>
+              </div>
+              <div class="menu-list-product-price">2$</div>
+            </div>
+            <div class="menu-list-product">
+              <div class="menu-list-product-name">
+                <input type="checkbox" value="2.5" id="peach" />
+                <label for="peach">Peach Tea</label>
+              </div>
+              <div class="menu-list-product-price">2,5$</div>
+            </div>
+          </div>
+          <button type="button" class="order-button" onclick="CalTotal()">
+            Order
+          </button>
+        </form>
+        <form action="" class="menu-list col-md-6">
+          <div class="menu-list-header">
+            <div class="menu-list-header-first">Your IceCream & Milk Tea</div>
+            <div class="menu-list-header-second">Menu List</div>
+          </div>
+          <div class="menu-list-content2"></div>
+          <div class="menu-list-footer">
+            Total amount: <span id="total-price"></span>
+          </div>
+        </form>
+      </div>
 
-	  <!--content footer-->
-      <div class="footer">        
+      <!--content footer-->
+      <div class="footer">
         <p>Email : Icecream@gmail.com</p>
         <p>Address: 100 To Hien Thanh, District 10, HCMC</p>
         <h5>&copy; Copyright 2021. IceCream.com</h5>
@@ -95,6 +174,6 @@
     <!--Kết thúc container-->
 
     <!--Embed Javascript here-->
-	<script src="/js/myCode.js"></script>
+    <script src="/js/myCode.js"></script>
   </body>
 </html>
