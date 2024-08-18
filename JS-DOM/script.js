@@ -1,22 +1,12 @@
-// Basic JS commands
-// let a = 4;
-// let b = 5;
-// let c = a + b;
-// console.log(c);
-// alert("Hello")
-// confirm("Are you sure")
-// let a = prompt("Enter your name: ")
-// console.log(a)
-
 // DOM Traversal
-// const hds = document.getElementsByClassName('heading');
-// console.log(hds);
-// const hd1 = document.getElementById('h1');
-// console.log(hd1);
-// const hd2 = document.querySelector('.heading');//for class
-// console.log(hd2);
-// const hd3 = document.querySelector('#h3');//for id
-// console.log(hd3);
+const hds = document.getElementsByClassName('heading');
+console.log(hds);
+const hd1 = document.getElementById('h1');
+console.log(hd1);
+const hd2 = document.querySelector('.heading');//for class
+console.log(hd2);
+const hd3 = document.querySelector('#h3');//for id
+console.log(hd3);
 
 // Add and Edit Elements
 const body = document.querySelector('body');
