@@ -22,16 +22,29 @@
     </div>
     <h3>Thẻ h3 cấp 0 - thứ 2</h3>
     <h3>The h3 cap 0 - thứ 3</h3>
+    <a id="google">Go to google page</a>
 
     <script>
-        let h13 = document.getElementById('id1_3');
-        console.log(h13);
-        let h3 = document.getElementsByTagName('h3');
-        console.log(h3[2]);
-        let test = document.getElementsByClassName('test');
-        console.log(test[0]);
-        let h33 = document.querySelectorAll('div div h3');
-        console.log(h33[0]);
+      //Find elements in HTML
+      let h13 = document.getElementById("id1_3");
+      console.log(h13);
+      let h3 = document.getElementsByTagName("h3");
+      console.log(h3[2]);
+      let test = document.getElementsByClassName("test");
+      console.log(test[0]);
+      let h33 = document.querySelectorAll("div div h3");
+      console.log(h33[0]);
+      
+      //Change elements in HTML
+      h13.innerHTML = "h13 has been edited.";
+      h13.innerHTML = "<a href='#'>Go to next page</a>";
+
+      let gg = document.getElementById("google");
+      gg.href = "https://www.google.com/?hl=vi";
+      gg.style.color = "red";
+      gg.style.fontSize = "20px";
+
+      h33[0].style.color = "blue";
     </script>
   </body>
 </html>
