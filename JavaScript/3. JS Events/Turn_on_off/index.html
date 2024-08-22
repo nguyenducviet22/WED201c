@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #sun{
-            border-radius: 50px;
-            background-color: black;
-        }
+      #sun {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: yellow;
+        border-radius: 50px;
+        width: 150px;
+        height: 150px;
+      }
     </style>
   </head>
   <body>
@@ -40,16 +46,17 @@
         console.log("h301 clicked");
       }
 
-      function turn_on(){
+      let isOn = false;
+      function turn_on() {
+        isOn = !isOn;
         let light = document.getElementById("sun");
-        light.style.color = "black";
-        light.style.backgroundColor = "yellow";
-      }
-
-      function turn_off(){
-        let light = document.getElementById("sun");
-        light.style.color = "yellow";
-        light.style.backgroundColor = "black";
+        if (isOn) {
+          light.style.color = "black";
+          light.style.backgroundColor = "yellow";
+        } else {
+          light.style.color = "yellow";
+          light.style.backgroundColor = "black";
+        }
       }
     </script>
   </body>
