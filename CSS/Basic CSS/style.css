@@ -10,6 +10,11 @@
     background-color: red;
 }
 
+/* Text */
+.text{
+    text-align: center;
+}
+
 /*Font*/
 .font{
     color: red;

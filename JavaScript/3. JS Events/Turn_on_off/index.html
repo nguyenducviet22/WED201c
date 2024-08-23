@@ -4,60 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #sun {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        color: yellow;
-        border-radius: 50px;
-        width: 150px;
-        height: 150px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <h3 ondblclick="clickH301()">Thẻ h3 cấp 0 - thứ 1</h3>
-    <div class="test">
-      <h3 onclick="console.log('h311 clicked')">Thẻ h3 cấp 1 - thứ 1</h3>
-      <h3 onclick="clickH312()">Thẻ h3 cấp 1 - thứ 2</h3>
-      <span>
-        <h3>Thẻ h3 cấp 2</h3>
-      </span>
-      <h3 id="id1_3">Thẻ h3 cấp 1 - thứ 3</h3>
-      <div>
-        <div>
-          <h3>Thẻ h3 cấp 3</h3>
-        </div>
-      </div>
-    </div>
-    <h3>Thẻ h3 cấp 0 - thứ 2</h3>
-    <h3>The h3 cap 0 - thứ 3</h3>
-
-    <div id="sun" onclick="turn_on()">SUN</div>
-
-    <script>
-      function clickH312() {
-        console.log("h312 clicked");
-      }
-
-      function clickH301() {
-        console.log("h301 clicked");
-      }
-
-      let isOn = false;
-      function turn_on() {
-        isOn = !isOn;
-        let light = document.getElementById("sun");
-        if (isOn) {
-          light.style.color = "black";
-          light.style.backgroundColor = "yellow";
-        } else {
-          light.style.color = "yellow";
-          light.style.backgroundColor = "black";
-        }
-      }
-    </script>
+    <div id="light" onclick="turn_on()">Light</div>
   </body>
 </html>
