@@ -1,0 +1,10 @@
+#light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+  }

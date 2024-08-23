@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: yellow;
+    width: 600px;
+}
+
+.addList{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+.content{
+    display: flex;
+}
+
