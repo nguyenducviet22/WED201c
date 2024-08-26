@@ -1,3 +1,7 @@
+let key = localStorage.getItem('key2');
+console.log(key);
+localStorage.setItem('key2', 'value2');
+
 function add(){
     let input = document.getElementById('input');
     let text = input.value;
