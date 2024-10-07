@@ -5,10 +5,15 @@
     /* 12 cols */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: gray;
+    justify-content: center;
+    align-content: center;
 }
 
 .header{
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/13;
 }
 .icon{
@@ -16,6 +21,9 @@
 }
 .menu{
     background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/3;
     grid-row: 2/4;
 }
@@ -30,13 +38,22 @@
 .card{
     background-color: gray;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right{
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 11/13;
 }
 .footer{
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 3/13;
 }
 

@@ -1,0 +1,15 @@
+.heading {
+    color: red;
+}
+
+[data-toggle='modal'] {
+    padding: 10px 15px;
+    border: 2px;
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+}
+
+[data-title] {
+    color: green;
+}

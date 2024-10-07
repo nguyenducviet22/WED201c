@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    /* column */
+    /* To create multiple lines */
+    flex-wrap: wrap;
+    
+    /* Applies to items within each line along the vertical axis */
+    align-items: center;
+    /* Applies to the entire flex container, not individual items */
+    align-content: center;
+
+    /* horizontal axis */
+    justify-content: center;
+    /* space-between, space-around, space-evenly */
+    background-color: gray;
+    width: 800px;
+    height: 600px;
+}
+
+.item{
+    /* for flex-wrap */
+    /* width: 300px; */
+    width: 150px;
+    height: 150px;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+    /* flex-grow: 1; */
+}
+
+.blue{
+    background-color: blue;
+}

@@ -1,0 +1,54 @@
+a{
+    display: block;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+a:hover{
+    color: white;
+    background-color: lightgreen;
+}
+
+a:focus{
+    color: white;
+    background-color: green;
+}
+
+a:active{
+    border: 3px solid black;
+}
+
+.gg{
+    color: blue;
+    background-color: lightgray;
+}
+.yt{
+    color: white;
+    background-color: red;
+}
+.ch{
+    color: black;
+    background-color: lightgray;
+}
+
+
+.img-gg{
+    list-style-image: url("images/gg.jpg");
+}
+
+.img-yt{
+    list-style-image: url("images/yt.png");
+}
+
+.img-ch{
+    list-style-image: url("images/ch.png");
+}
+
+ul{
+    background-position: 20px 50%px;
+}

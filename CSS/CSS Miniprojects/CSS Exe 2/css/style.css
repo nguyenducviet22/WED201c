@@ -1,0 +1,49 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 115%;
+}
+
+header{
+    background-color: lightgray;
+}
+
+nav{
+    display: inline-block;
+    width: 80%;
+}
+
+li{
+    display: inline-block;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+    color: rgb(66, 41, 154);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.neighborhood{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.parks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+p{
+    line-height: 25px;
+}
