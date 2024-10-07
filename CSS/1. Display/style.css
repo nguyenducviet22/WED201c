@@ -1,0 +1,34 @@
+.container{
+    width: 400px;
+    border: solid;
+}
+
+.item{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+span{
+    display: inline-block;
+}
+
+div{
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+}
