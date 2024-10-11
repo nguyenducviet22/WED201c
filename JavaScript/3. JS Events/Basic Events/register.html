@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="message('LOAD')" onresize="message('RESIZE')">
+    <h2 id="event" onclick="message('CLICK')">Events</h2>
+    <h2 id="register">Registering...</h2>
+    <div>
+        <p id="dbi">DBI</p><button class="yes" type="button" onclick="registerDBI()">Register</button>
+                            <button class="no" type="button" onclick="cancelDBI()">Cancel</button>
+        <p id="lab">LAB</p><button type="button" onclick="registerLAB(this)">Register</button>
+                            <button type="button" onclick="cancelLAB(this)">Cancel</button>
+        <p id="csd">CSD</p><button type="button" onclick="registerCSD()">Register</button>
+        <p id="jpd">JPD</p><button type="button" onclick="registerJPD()">Register</button>
+        <p id="wed">WED</p><button type="button" onclick="registerWED()">Register</button>
+    </div>
+    <button onclick="register()">Finish</button>
+</body>
+
+</html>
